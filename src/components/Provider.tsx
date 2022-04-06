@@ -71,7 +71,7 @@ const SProviderContainer = styled.div<IStyedThemeColorOptions>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 60px 70px;
+  padding: 90px 88px;
   border-radius: 25px;
   @media screen and (max-width: 768px) {
     padding: 1vw;
