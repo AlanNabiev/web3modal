@@ -92,7 +92,9 @@ interface IModalCardStyleProps {
 const SModalCard = styled.div<IModalCardStyleProps>`
   position: relative;
   width: 100%;
-  background-image: url('../assets/bg_texture.png')
+  background-image: url('../assets/bg_texture.png');
+  -webkit-background-size: cover;
+  background-size: cover;
   border-radius: 25px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.93);
   margin: 10px;
