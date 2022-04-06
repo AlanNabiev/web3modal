@@ -25,6 +25,8 @@ import BinanceChainWalletLogo from "../logos/binancechainwallet.svg";
 // @ts-ignore
 import CoinbaseWalletLogo from "../logos/coinbasewallet.svg";
 // @ts-ignore
+import BitKeepWalletLogo from "../logos/bitkeep.svg";
+// @ts-ignore
 import WalletLinkLogo from "../logos/walletlink.svg";
 // @ts-ignore
 import SequenceLogo from "../logos/sequence.svg";
@@ -170,6 +172,17 @@ export const COINBASEWALLET: IProviderInfo = {
   logo: CoinbaseWalletLogo,
   type: "injected",
   check: "isCoinbaseWallet",
+  package: {
+    required: [["appName", "infuraId", "rpc"]]
+  }
+};
+
+export const BITKEEPWALLET: IProviderInfo = {
+  id: "bitkeepwallet",
+  name: "BitKeep",
+  logo: BitKeepWalletLogo,
+  type: "injected",
+  check: "isBitKeep",
   package: {
     required: [["appName", "infuraId", "rpc"]]
   }
