@@ -71,10 +71,13 @@ const SProviderContainer = styled.div<IStyedThemeColorOptions>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 90px 88px;
+  width: 358px;
+  height: 440px;
   border-radius: 25px;
   @media screen and (max-width: 768px) {
     padding: 1vw;
+    width: 100%;
+    height: auto;
   }
 `;
 
@@ -90,9 +93,6 @@ const SProviderWrapper = styled.div<IStyedThemeColorOptions>`
     &:hover ${SProviderContainer} {
       box-shadow: 0px 4px 22px 11px rgba(0, 0, 0, 0.24);
     }
-  }
-  @media screen and (max-width: 768px) {
-    width: 100%;
   }
 `;
 

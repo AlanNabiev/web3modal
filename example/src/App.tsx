@@ -237,16 +237,6 @@ class App extends React.Component<any, any> {
         options: {
           infuraId
         }
-      },
-      torus: {
-        package: Torus
-      },
-      coinbasewallet: {
-        package: CoinbaseWalletSDK,
-        options: {
-          appName: "Web3Modal Example App",
-          infuraId
-        }
       }
     };
     return providerOptions;

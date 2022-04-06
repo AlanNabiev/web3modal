@@ -94,6 +94,7 @@ const SModalCard = styled.div<IModalCardStyleProps>`
   width: 100%;
   border-radius: 25px;
   background-image: url(${Background});
+  background-size: cover;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.93);
   padding: 32px;
   opacity: ${({ show }) => (show ? 1 : 0)};
