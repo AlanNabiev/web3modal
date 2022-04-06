@@ -76,7 +76,7 @@ const SProviderContainer = styled.div<IStyedThemeColorOptions>`
 `;
 
 const SProviderWrapper = styled.div<IStyedThemeColorOptions>`
-  width: 100%;
+  width: 150px;
   padding: 32px;
   display: flex;
   justify-content: center;
@@ -88,6 +88,9 @@ const SProviderWrapper = styled.div<IStyedThemeColorOptions>`
     &:hover ${SProviderContainer} {
       box-shadow: 0px 4px 22px 11px rgba(0, 0, 0, 0.24);
     }
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
   }
 `;
 

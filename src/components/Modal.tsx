@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as PropTypes from "prop-types";
 import styled from "styled-components";
+import Background from '../assets/bg_texture.png';
 
 import { Provider } from "./Provider";
 import {
@@ -92,6 +93,7 @@ interface IModalCardStyleProps {
 const SModalCard = styled.div<IModalCardStyleProps>`
   position: relative;
   width: 100%;
+  background: #2A3F58 url(${Background});
   border-radius: 25px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.93);
   margin: 10px;
@@ -182,9 +184,7 @@ export class Modal extends React.Component<IModalProps, IModalState> {
         ref={c => (this.lightboxRef = c)}
         show={show}
       >
-        <SModalContainer className={MODAL_CONTAINER_CLASSNAME} show={show} style={{ 
-      backgroundImage: `url("../assets/bg_texture.png")` 
-    }}>
+        <SModalContainer className={MODAL_CONTAINER_CLASSNAME} show={show}>
           <SHitbox className={MODAL_HITBOX_CLASSNAME} onClick={onClose} />
           <SModalCard
             className={MODAL_CARD_CLASSNAME}
