@@ -62,8 +62,6 @@ const SProviderContainer = styled.div<IStyedThemeColorOptions>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${({ themeColors }) => themeColors.background};
-  border-radius: 12px;
   padding: 24px 16px;
   @media screen and (max-width: 768px) {
     padding: 1vw;
@@ -78,11 +76,11 @@ const SProviderWrapper = styled.div<IStyedThemeColorOptions>`
   align-items: center;
   flex-direction: column;
   cursor: pointer;
-  border-radius: 0;
+  border-radius: 25px;
   border: ${({ themeColors }) => `1px solid ${themeColors.border}`};
   @media (hover: hover) {
     &:hover ${SProviderContainer} {
-      background-color: ${({ themeColors }) => themeColors.hover};
+      box-shadow: 0px 4px 22px 11px rgba(0, 0, 0, 0.24);
     }
   }
 `;

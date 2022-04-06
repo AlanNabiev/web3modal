@@ -93,7 +93,9 @@ const SModalCard = styled.div<IModalCardStyleProps>`
   position: relative;
   width: 100%;
   background-color: ${({ themeColors }) => themeColors.background};
-  border-radius: 12px;
+  bacground-image: url('../assets/bg_texture.png')
+  border-radius: 25px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.93);
   margin: 10px;
   padding: 0;
   opacity: ${({ show }) => (show ? 1 : 0)};
