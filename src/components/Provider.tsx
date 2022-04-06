@@ -36,8 +36,11 @@ interface IStyedThemeColorOptions {
 
 const SName = styled.div<IStyedThemeColorOptions>`
   width: 100%;
-  font-size: 24px;
-  font-weight: 700;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 100%;
   margin-top: 0.5em;
   color: ${({ themeColors }) => themeColors.main};
   @media screen and (max-width: 768px) {
@@ -47,8 +50,12 @@ const SName = styled.div<IStyedThemeColorOptions>`
 
 const SDescription = styled.div<IStyedThemeColorOptions>`
   width: 100%;
-  font-size: 18px;
-  margin: 0.333em 0;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 136.35%;
+  margin: 2em 0;
   color: ${({ themeColors }) => themeColors.secondary};
   @media screen and (max-width: 768px) {
     font-size: 4vw;
@@ -77,7 +84,6 @@ const SProviderWrapper = styled.div<IStyedThemeColorOptions>`
   flex-direction: column;
   cursor: pointer;
   border-radius: 25px;
-  border: ${({ themeColors }) => `1px solid ${themeColors.border}`};
   @media (hover: hover) {
     &:hover ${SProviderContainer} {
       box-shadow: 0px 4px 22px 11px rgba(0, 0, 0, 0.24);
