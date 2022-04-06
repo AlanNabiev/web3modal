@@ -92,7 +92,7 @@ interface IModalCardStyleProps {
 const SModalCard = styled.div<IModalCardStyleProps>`
   position: relative;
   width: 100%;
-  bacground-image: url('../assets/bg_texture.png')
+  background-image: url('../assets/bg_texture.png')
   border-radius: 25px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.93);
   margin: 10px;
@@ -102,7 +102,7 @@ const SModalCard = styled.div<IModalCardStyleProps>`
   pointer-events: ${({ show }) => (show ? "auto" : "none")};
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(358px, 2fr));
+  grid-template-columns: repeat(2, minmax(358px, 1fr));
   max-width: ${({ maxWidth }) => (maxWidth ? `${maxWidth}px` : "800px")};
   min-width: fit-content;
   max-height: 100%;

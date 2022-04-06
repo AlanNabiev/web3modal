@@ -11,8 +11,8 @@ import {
 } from "../constants";
 
 const SIcon = styled.div`
-  width: 45px;
-  height: 45px;
+  width: 98px;
+  height: 98px;
   display: flex;
   border-radius: 50%;
   overflow: visible;
@@ -41,7 +41,7 @@ const SName = styled.div<IStyedThemeColorOptions>`
   font-weight: 600;
   font-size: 25px;
   line-height: 100%;
-  margin-top: 0.5em;
+  margin: 2em 0;
   color: ${({ themeColors }) => themeColors.main};
   @media screen and (max-width: 768px) {
     font-size: 5vw;
@@ -55,7 +55,6 @@ const SDescription = styled.div<IStyedThemeColorOptions>`
   font-weight: 500;
   font-size: 20px;
   line-height: 136.35%;
-  margin: 2em 0;
   color: ${({ themeColors }) => themeColors.secondary};
   @media screen and (max-width: 768px) {
     font-size: 4vw;
@@ -63,7 +62,7 @@ const SDescription = styled.div<IStyedThemeColorOptions>`
 `;
 
 const SProviderContainer = styled.div<IStyedThemeColorOptions>`
-  transition: background-color 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
   display: flex;
   flex-direction: column;
