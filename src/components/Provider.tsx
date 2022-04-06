@@ -36,6 +36,7 @@ interface IStyedThemeColorOptions {
 
 const SName = styled.div<IStyedThemeColorOptions>`
   width: 100%;
+  text-transform: uppercase;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -45,11 +46,12 @@ const SName = styled.div<IStyedThemeColorOptions>`
   color: ${({ themeColors }) => themeColors.main};
   @media screen and (max-width: 768px) {
     font-size: 5vw;
+    margin: 0.5em 0;
   }
 `;
 
 const SDescription = styled.div<IStyedThemeColorOptions>`
-  width: 100%;
+  width: 70%;
   font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 500;
@@ -58,6 +60,7 @@ const SDescription = styled.div<IStyedThemeColorOptions>`
   color: ${({ themeColors }) => themeColors.secondary};
   @media screen and (max-width: 768px) {
     font-size: 4vw;
+    width: 100%;
   }
 `;
 
@@ -68,7 +71,7 @@ const SProviderContainer = styled.div<IStyedThemeColorOptions>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 90px 88px;
+  padding: 60px 70px;
   border-radius: 25px;
   @media screen and (max-width: 768px) {
     padding: 1vw;
@@ -76,8 +79,7 @@ const SProviderContainer = styled.div<IStyedThemeColorOptions>`
 `;
 
 const SProviderWrapper = styled.div<IStyedThemeColorOptions>`
-  width: 150px;
-  padding: 32px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

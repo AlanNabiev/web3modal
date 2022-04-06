@@ -1,8 +1,6 @@
 import * as React from "react";
 import * as PropTypes from "prop-types";
 import styled from "styled-components";
-import Background from '../assets/bg_texture.png';
-
 import { Provider } from "./Provider";
 import {
   MODAL_LIGHTBOX_CLASSNAME,
@@ -10,6 +8,7 @@ import {
   MODAL_HITBOX_CLASSNAME,
   MODAL_CARD_CLASSNAME
 } from "../constants";
+import Background from "../assets/bg_texture.png"
 import { SimpleFunction, IProviderUserOptions, ThemeColors } from "../helpers";
 
 declare global {
@@ -67,7 +66,7 @@ const SModalContainer = styled.div<IModalContainerStyleProps>`
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 15px;
+  padding: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,17 +92,17 @@ interface IModalCardStyleProps {
 const SModalCard = styled.div<IModalCardStyleProps>`
   position: relative;
   width: 100%;
-  background: #2A3F58 url(${Background});
   border-radius: 25px;
+  background-image: url(${Background});
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.93);
-  margin: 10px;
-  padding: 0;
+  padding: 32px;
   opacity: ${({ show }) => (show ? 1 : 0)};
   visibility: ${({ show }) => (show ? "visible" : "hidden")};
   pointer-events: ${({ show }) => (show ? "auto" : "none")};
 
   display: grid;
   grid-template-columns: repeat(2, minmax(358px, 1fr));
+  gap: 32px;
   max-width: ${({ maxWidth }) => (maxWidth ? `${maxWidth}px` : "800px")};
   min-width: fit-content;
   max-height: 100%;

@@ -10,7 +10,6 @@ import WalletConnect from "@walletconnect/web3-provider";
 import CoinbaseWalletSDK from "@coinbase/wallet-sdk";
 // @ts-ignore
 import Torus from "@toruslabs/torus-embed";
-
 import Button from "./components/Button";
 import Column from "./components/Column";
 import Wrapper from "./components/Wrapper";
@@ -164,6 +163,7 @@ class App extends React.Component<any, any> {
     };
 
     this.web3Modal = new Web3Modal({
+      theme: 'dark',
       network: this.getNetwork(),
       cacheProvider: true,
       providerOptions: this.getProviderOptions()

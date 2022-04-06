@@ -135,16 +135,28 @@ export function getProviderDescription(
   let description = "";
   switch (providerInfo.type) {
     case "injected":
-      description = `Connect to your ${providerInfo.name} Wallet`;
+      description = `Connect to your ${providerInfo.name?.replace(
+        /\s/g,
+        ""
+      )} Wallet`;
       break;
     case "web":
-      description = `Connect with your ${providerInfo.name} account`;
+      description = `Connect with your ${providerInfo.name?.replace(
+        /\s/g,
+        ""
+      )} account`;
       break;
     case "qrcode":
-      description = `Scan with ${providerInfo.name} to connect`;
+      description = `Scan with ${providerInfo.name?.replace(
+        /\s/g,
+        ""
+      )} to connect`;
       break;
     case "hardware":
-      description = `Connect to your ${providerInfo.name} Hardware Wallet`;
+      description = `Connect to your ${providerInfo.name?.replace(
+        /\s/g,
+        ""
+      )} Hardware Wallet`;
       break;
     default:
       break;

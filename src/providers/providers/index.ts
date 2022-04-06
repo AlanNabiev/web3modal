@@ -35,7 +35,7 @@ export * from "../injected";
 
 export const WALLETCONNECT: IProviderInfo = {
   id: "walletconnect",
-  name: "WalletConnect",
+  name: "Wallet Connect",
   logo: WalletConnectLogo,
   type: "qrcode",
   check: "isWalletConnect",
