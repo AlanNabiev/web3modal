@@ -15,6 +15,8 @@ import DapperLogo from "../logos/dapper.png";
 // @ts-ignore
 import CoinbaseLogo from "../logos/coinbase.svg";
 // @ts-ignore
+import BitKeepLogo from "../logos/bitkeep.svg";
+// @ts-ignore
 import CipherLogo from "../logos/cipher.svg";
 // @ts-ignore
 import imTokenLogo from "../logos/imtoken.svg";
@@ -111,6 +113,14 @@ export const COINBASE: IProviderInfo = {
   logo: CoinbaseLogo,
   type: "injected",
   check: "isCoinbaseWallet"
+};
+
+export const BITKEEP: IProviderInfo = {
+  id: "injected",
+  name: "BitKeep",
+  logo: BitKeepLogo,
+  type: "injected",
+  check: "isBitKeep"
 };
 
 export const CIPHER: IProviderInfo = {
