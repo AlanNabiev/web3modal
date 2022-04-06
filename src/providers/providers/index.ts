@@ -183,9 +183,6 @@ export const BITKEEPWALLET: IProviderInfo = {
   logo: BitKeepWalletLogo,
   type: "injected",
   check: "isBitKeep",
-  package: {
-    required: [["appName", "infuraId", "rpc"]]
-  }
 };
 
 export const SEQUENCE: IProviderInfo = {

@@ -14,6 +14,8 @@ import frame from "./frame";
 import binancechainwallet from "./binancechainwallet";
 import coinbasewallet, { walletlink } from "./coinbasewallet";
 import sequence from "./sequence";
+import bitkeepwallet from "./bitkeepwallet";
+
 
 export {
   injected,
@@ -32,5 +34,6 @@ export {
   binancechainwallet,
   coinbasewallet,
   walletlink,
-  sequence
+  sequence,
+  bitkeepwallet
 };
