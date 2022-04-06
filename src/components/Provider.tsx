@@ -68,7 +68,8 @@ const SProviderContainer = styled.div<IStyedThemeColorOptions>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 24px 16px;
+  padding: 90px 88px;
+  border-radius: 25px;
   @media screen and (max-width: 768px) {
     padding: 1vw;
   }
@@ -76,7 +77,7 @@ const SProviderContainer = styled.div<IStyedThemeColorOptions>`
 
 const SProviderWrapper = styled.div<IStyedThemeColorOptions>`
   width: 100%;
-  padding: 8px;
+  padding: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
