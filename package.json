@@ -43,9 +43,9 @@
   },
   "scripts": {
     "prepare": "npm run clean && npm run build",
-    "clean": "rm -rf dist",
-    "clean:example": "rm -rf example/build",
-    "clean:node_modules": "rm -rf node_modules && cd example && rm -rf node_modules",
+    "clean": "rimraf dist",
+    "clean:example": "rimraf example/build",
+    "clean:node_modules": "rimraf node_modules && cd example && rimraf node_modules",
     "clean:all": "npm run clean && npm run clean:example && npm run clean:node_modules",
     "bootstrap": "npm install && cd example && npm install",
     "start": "npm run check && cd example && npm run start",
@@ -93,6 +93,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "rimraf": "^3.0.2",
     "styled-components": "^5.3.3",
     "tslib": "^1.10.0"
   }
