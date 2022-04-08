@@ -72,7 +72,7 @@ const SProviderContainer = styled.div<IStyedThemeColorOptions>`
   justify-content: center;
   align-items: center;
   width: 358px;
-  height: 440px;
+  height: 382px;
   border-radius: 25px;
   @media screen and (max-width: 768px) {
     padding: 1vw;
