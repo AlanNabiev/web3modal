@@ -54,7 +54,7 @@ const SDescription = styled.div<IStyedThemeColorOptions>`
   width: 70%;
   font-family: 'Space Grotesk';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 100;
   font-size: 20px;
   line-height: 136.35%;
   color: ${({ themeColors }) => themeColors.secondary};
